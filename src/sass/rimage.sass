@@ -1,0 +1,63 @@
+$sm: 576
+$md: 768
+$lg: 992
+$xl: 1200
+
+@for $i from 1 through 500
+	.ri-#{$i}px
+		width: 100%
+		max-width: $i * 1px
+		height: auto
+
+.ri-fluid
+	max-width: 100%
+	height: auto
+
+@media ( max-width: $sm - 0.02px )
+	@for $i from 1 through 500
+		.ri-xs-#{$i}px
+			width: 100%
+			max-width: $i * 1px
+			height: auto
+	.ri-xs-fluid
+		max-width: 100%
+		height: auto
+@media ( min-width: $sm * 1px ) and ( max-width: $md - 0.02px )
+	@for $i from 1 through 500
+		.ri-sm-#{$i}px
+			width: 100%
+			max-width: $i * 1px
+			height: auto
+	.ri-sm-fluid
+		max-width: 100%
+		height: auto
+
+@media ( min-width: $md * 1px ) and ( max-width: $lg - 0.02px )
+	@for $i from 1 through 500
+		.ri-md-#{$i}px
+			width: 100%
+			max-width: $i * 1px
+			height: auto
+	.ri-md-fluid
+		max-width: 100%
+		height: auto
+
+@media ( min-width: $lg * 1px ) and  (max-width: $xl - 0.02px )
+	@for $i from 1 through 500
+		.ri-lg-#{$i}px
+			width: 100%
+			max-width: $i * 1px
+			height: auto
+	.ri-lg-fluid
+		max-width: 100%
+		height: auto
+
+@media ( min-width: $xl * 1px )
+	@for $i from 1 through 500
+		.ri-xl-#{$i}px
+			width: 100%
+			max-width: $i * 1px
+			height: auto
+	.ri-xl-fluid
+		max-width: 100%
+		height: auto
